@@ -14,7 +14,7 @@
     background-image:url('./assets/img/rvu2.png');
     background-position: center;
     background-repeat: no-repeat;
-    height: 451px;
+    height: 400px;
 }
 .blank
 {
@@ -44,6 +44,7 @@ table
 {
     width:100%;
     display: table;
+    
 }
 
 #tablecaption{
@@ -65,6 +66,9 @@ table
     display: table-cell;
     padding: 10px;
     text-align:center;
+    border-style:double;
+    /* text-decoration:underline; */
+    
     background-color: rgb(230, 201, 129);
     font-weight: bold;
 }
@@ -73,15 +77,75 @@ table
     display: table-cell;
     padding: 10px;
     text-align:center;
+    color:aliceblue;
+    font-size: 40px;
+    text-decoration:underline;
     background-color:rgb(253, 210, 101);
     font-family:'Times New Roman', Times, serif;
-    text-shadow: 1px 1px black;
+    /* text-shadow: 1px 1px black; */
     animation-name: colorchange;
+    /* background-image:url('./assets/img/rvu\ course.png'); */
+    /* height:50px;
+    width: 50px; */
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 @keyframes colorchange
 {
-    from{background-color:red ;}
-    to{background-color:green ;}
+    0%{background-color:rgb(253, 210, 101) ;}
+    100%{background-color:#03045e ;}
+    /* 100%{background-color:rgb(114, 201, 238) ;} */
+}
+.underline
+{
+    text-decoration:underline;
+}
+ /* .table-body-cell:hover
+{
+color:black;
+     background-image:url('./assets/img/rvu\ course.png'); 
+} */
+
+.rvu
+{
+    animation: animate 25s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translate3d(0,0,0);
+    }
+    100%
+    {
+        transform: translate3d(+30px,-10px,+10px);
+    }
+}
+
+.href:hover
+{
+    color:red;
+    font-size:150%;
+}
+.socials
+{
+    height: 150px;
+    text-align: center;
+    text-decoration:underline;
+    color:black;
+    background-color: rgb(144, 234, 249);
+    border-style:double;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.logo
+{
+    height:5px;
+    display: table-cell;
+}
+.table-body-cell
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
